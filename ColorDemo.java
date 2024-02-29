@@ -11,7 +11,8 @@ import java.awt.Color;
  */
 public class ColorDemo {
 	
-	public static void main (String[] args) {	
+	public static void main (String[] args) 
+	{	
 
 	    // Constructs a few color objects:		
 		Color black  = new Color(0, 0, 0);
@@ -21,14 +22,14 @@ public class ColorDemo {
 
         // To access the RGB values of a Color object,
         // we use three "get" nethods. For example: 
-        System.out.println("RGB values of yellow:");     
-		System.out.println("R = " + yellow.getRed());   // prints 255
-		System.out.println("G = " + yellow.getGreen()); // prints 255
-		System.out.println("B = " + yellow.getBlue());  // prints   0
+      //  System.out.println("RGB values of yellow:");     
+	//	System.out.println("R = " + yellow.getRed());   // prints 255
+	//	System.out.println("G = " + yellow.getGreen()); // prints 255
+	//	System.out.println("B = " + yellow.getBlue());  // prints   0
 
         // Tests the print method: 
 		System.out.print("Red = "); print(red);
-		System.out.println();
+	//	System.out.println();
 
         // Constructs an array of Color objects, and prints the array elements.
 		Color[] bwbw = { black, white, black, white };
@@ -53,7 +54,8 @@ public class ColorDemo {
 	 * Prints the RGB values of a given color, using the format "(rrr,ggg,bbb)". 
 	 * @param c - the given color
 	 */
-	public static void print(Color c) {
+	public static void print(Color c) 
+	{
 	    System.out.print("(");
 		System.out.printf("%3s,", c.getRed());   // Prints the red component
 		System.out.printf("%3s,", c.getGreen()); // Prints the green component
